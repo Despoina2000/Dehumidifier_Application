@@ -8,6 +8,7 @@ if(document.getElementById("EcoMode").checked) {
     chosen_hum = "hum3";
     chosen_fan = "fan3";
 }
+
 var h = document.getElementById(chosen_hum);
 var f = document.getElementById(chosen_fan);
 var humidity = h.value;
