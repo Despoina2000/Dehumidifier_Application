@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Modes</title>
+    <script src="modes.js"></script>
+	<style>
+        h1 {
+            margin: auto;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 15%;
+        }
+
+		.mode {
+            height: 80px;
+            width: 600px;
+            font-size: 26px;
+            background-color: rgb(225, 225, 225);
+            color: black;
+            margin: auto;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .humidity_choices {
+            display:inline-block;
+            text-align: left;
+            font-size: 16px;
+            margin-right: 200px;
+        }
+
+        .fan_choices {
+            display: inline-block;
+            text-align: right;
+            font-size: 16px;
+        }
+	</style>
+
+</head>
+
+
+
+<body>
+
+    
+
+    <div><h1>Modes</h1></div>
+    <div>
+        <p>Humidity is <span id="humidityout"></span></p>
+        <p>Fan Speed is <span id="fanspeedout"></span></p>
+    </div>
+
+    <div class="mode" id="mode1">
+        <input type="radio" id="EcoMode" name="chosen_mode" value="EcoMode">
+        <label for="EcoMode">Eco Mode</label><br>
+        <form class="humidity_choices" id="hc1" action="#">
+            <label>Humidity: </label>
+            <select name="humidity" id="hum1">
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50" selected>50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+        <form class="fan_choices" id="fc1" action="#">
+            <label>Fan Speed: </label>
+            <select name="" id="fan1">
+            <option value="Slow" selected>Slow</option>
+            <option value="Fast">Fast</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div class="mode" id="mode2">
+        <input type="radio" id="DryClothes" name="chosen_mode" value="DryClothes">
+        <label for="DryClothes">Dry Clothes</label><br>
+        <form class="humidity_choices" id="hc2" action="#">
+            <label>Humidity: </label>
+            <select name="humidity" id="hum2">
+            <option value="30" selected>30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+        <form class="fan_choices" id="fc2" action="#">
+            <label>Fan Speed: </label>
+            <select name="" id="fan2">
+            <option value="Slow">Slow</option>
+            <option value="Fast" selected>Fast</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    <div class="mode" id="mode3">
+        <input type="radio" id="Auto" name="chosen_mode" value="Auto">
+        <label for="Auto">Auto</label><br>
+        <form class="humidity_choices" id="hc3" action="#">
+            <label>Humidity: </label>
+            <select name="humidity" id="hum3">
+            <option value="30">30</option>
+            <option value="40" selected>40</option>
+            <option value="50">50</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+        <form class="fan_choices" id="fc3" action="#">
+            <label>Fan Speed: </label>
+            <select name="" id="fan3">
+            <option value="Slow" selected>Slow</option>
+            <option value="Fast">Fast</option>
+            </select>
+            <input type="submit" value="Submit" />
+        </form>
+    </div>
+
+    
+
+</body>
+
+
+</head>
+</html>
